@@ -1,0 +1,10 @@
+<h1>Currency converter</h1>
+
+<p>This is a currency converter.</p>
+
+<label>Provide currency by using digits</label>
+<input [(ngModel)]="numericalCurrency" required=""  type="text" class="form-control">
+
+<p>Currency in words: <strong>{{ currency }}</strong></p>
+
+<button (click)="convert()">Convert</button>
